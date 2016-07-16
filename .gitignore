@@ -1,13 +1,17 @@
 # Ignore bundler config.
 /.bundle
+/neo4j-rails/.bundle
+/neo4j-rails/vendor
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
-     /db/*.sqlite3-journal
+/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/neo4j-rails/log/*.log
+/neo4j-rails/tmp
 
 # Ignore other unneeded files.
 doc/
