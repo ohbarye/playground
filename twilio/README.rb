@@ -39,8 +39,9 @@ curl -v -X POST 'https://api.twilio.com/2010-04-01/Accounts/AC8f2fc93cfe9a25ae18
 ## NOTE
 
 - `jp.twilio.com` account is not available at `www.twilio.com`
-- Phone number format should be the national format. For instance, Japanese `09012345678` should be `+819012345678`. (It may be restriction of trial account?)
+- Phone number format should be the national format. For instance, Japanese `09012345678` should be `+819012345678`.
 - Using trial account, recipient phone number must be verified. We can verify at https://jp.twilio.com/console/phone-numbers/verified
+- In Japan, SMS cannot contain images. (Available only in US and Canada.)
 
 ## References
 
