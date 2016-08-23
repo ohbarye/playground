@@ -7,16 +7,18 @@ const Item = (props) => {
     desc,
     price,
     onClickBtn,
-  } = props;
+    btnLabel,
+    isSimple,
+    } = props;
 
   return (
     <div className="Item">
       <h3 className="Item__title">{title}</h3>
       <span className="Item__author">{author}</span>
-      <p className="Item__desc">{desc}</p>
+      {isSimple ? null : <p className="Item__desc">{desc}</p>}
       <p className="Item__price">{price}円</p>
       <div className="Item__btnWrap">
-        <button type="button" className="Btn" onClick={onClickBtn}>カートにいれる</button>
+        <button type="button" className="Btn" onClick={onClickBtn}>{btnLabel}</button>
       </div>
     </div>
   );
@@ -28,6 +30,12 @@ Item.propTypes = {
   desc:   React.PropTypes.string.isRequired,
   price:  React.PropTypes.number.isRequired,
   onClickBtn: React.PropTypes.func.isRequired,
+  btnLabel:   React.PropTypes.string.isRequired,
+  isSimple: React.PropTypes.bool,
+};
+
+Item.defaultProps = {
+  isSimple: false
 };
 
 export default Item;

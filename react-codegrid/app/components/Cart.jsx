@@ -15,6 +15,8 @@ const Cart = (props) => {
         <Item
           key={idx}
           {...item}
+          btnLabel="カートから出す"
+          isSimple={true}
           onClickBtn={() => { removeFromCart(idx); }}
         />
       );

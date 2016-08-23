@@ -15,6 +15,7 @@ const ItemList = (props) => {
           <li className="ItemList__item" key={idx}>
             <Item
               {...item}
+              btnLabel="カートに入れる"
               onClickBtn={() => { addToCart(item); }}
             />
           </li>
