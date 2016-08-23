@@ -4,14 +4,14 @@ import Header from './Header.jsx';
 import Container from './Container.jsx';
 import Footer from './Footer.jsx';
 
-import styles from '../style.css'
-
 class App extends React.Component {
   render() {
+    const { listItems } = this.props;
+
     return (
       <div>
         <Header />
-        <Container />
+        <Container listItems={listItems} />
         <Footer />
       </div>
     );

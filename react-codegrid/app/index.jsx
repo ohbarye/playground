@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { fetchItemModel } from './util';
-import App from './components/App.jsx';
+
+import styles from './style.css'
+
+import App from './components/App';
 
 window.addEventListener('load', () => {
 
