@@ -5,8 +5,9 @@ const Item = (props) => {
     title,
     author,
     desc,
-    price
-    } = props;
+    price,
+    onClickBtn,
+  } = props;
 
   return (
     <div className="Item">
@@ -15,7 +16,7 @@ const Item = (props) => {
       <p className="Item__desc">{desc}</p>
       <p className="Item__price">{price}円</p>
       <div className="Item__btnWrap">
-        <button type="button" className="Btn">カートにいれる</button>
+        <button type="button" className="Btn" onClick={onClickBtn}>カートにいれる</button>
       </div>
     </div>
   );
@@ -26,6 +27,7 @@ Item.propTypes = {
   author: React.PropTypes.string.isRequired,
   desc:   React.PropTypes.string.isRequired,
   price:  React.PropTypes.number.isRequired,
+  onClickBtn: React.PropTypes.func.isRequired,
 };
 
 export default Item;
