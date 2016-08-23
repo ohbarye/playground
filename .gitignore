@@ -22,3 +22,7 @@ doc/
 .idea
 .secret
 
+# node
+npm-debug.log
+node_modeles/
+build/
