@@ -1,13 +1,21 @@
 import React from 'react';
 
-class SampleComponent extends React.Component {
+import Header from './Header.jsx';
+import Container from './Container.jsx';
+import Footer from './Footer.jsx';
+
+import styles from '../style.css'
+
+class App extends React.Component {
   render() {
     return (
       <div>
-        This article is written by leader22
+        <Header />
+        <Container />
+        <Footer />
       </div>
     );
   }
 }
 
-export default SampleComponent
+export default App;

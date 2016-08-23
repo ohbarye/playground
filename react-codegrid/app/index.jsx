@@ -1,10 +1,21 @@
-import React from 'react';  
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-import SampleComponent from './components/App';
-import TextInputComponent from './components/TextInputComponent';
+import { fetchItemModel } from './util';
+import App from './components/App.jsx';
 
-let appNode = document.createElement('div');  
-document.body.appendChild(appNode);
+window.addEventListener('load', () => {
 
-ReactDOM.render(<TextInputComponent />, appNode);
+  // サーバーに商品リストをリクエスト
+  fetchItemModel()
+    .then((res) => {
+      let appNode = document.createElement('div');
+      document.body.appendChild(appNode);
+
+      // そのレスポンスを`props`に渡しつつ、アプリケーションを起動
+      ReactDOM.render(
+        <App listItems={res.data} />, appNode
+      );
+    });
+
+}, false);
