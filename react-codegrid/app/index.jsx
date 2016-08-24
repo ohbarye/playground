@@ -1,24 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { fetchItemModel } from './util';
+import ActionCreator from './ActionCreator';
+import App from './App';
 
 import styles from './style.css'
 
-import App from './components/App';
-
 window.addEventListener('load', () => {
+  ActionCreator.loadListItem().then(() => {
+    let appNode = document.createElement('div');
+    document.body.appendChild(appNode);
 
-  // サーバーに商品リストをリクエスト
-  fetchItemModel()
-    .then((res) => {
-      let appNode = document.createElement('div');
-      document.body.appendChild(appNode);
-
-      // そのレスポンスを`props`に渡しつつ、アプリケーションを起動
-      ReactDOM.render(
-        <App listItems={res.data} />, appNode
-      );
-    });
-
+    ReactDOM.render(
+      <App />, appNode
+    );
+  });
 }, false);
