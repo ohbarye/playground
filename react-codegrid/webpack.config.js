@@ -2,6 +2,7 @@ var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');  
 var merge = require('webpack-merge');
 var webpack = require('webpack');
+var DashboardPlugin = require('webpack-dashboard/plugin');
 
 const TARGET = process.env.npm_lifecycle_event;
 
@@ -42,7 +43,8 @@ const common = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Kanban'
-    })
+    }),
+    new DashboardPlugin()
   ]
 
 };

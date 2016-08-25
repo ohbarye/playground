@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dashboard -- webpack-dev-server"
   },
   "author": "ohbarye",
   "license": "MIT",
@@ -18,6 +17,7 @@
     "css-loader": "^0.23.1",
     "html-webpack-plugin": "^2.22.0",
     "style-loader": "^0.13.1",
+    "webpack-dashboard": "^0.1.8",
     "webpack-dev-server": "^1.15.0",
     "webpack-merge": "^0.14.1"
   },
