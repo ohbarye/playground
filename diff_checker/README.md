@@ -1,4 +1,4 @@
-# Ignore whitespace
+# Diff Checker
 
 A bookmarklet to open GitHub's compare page from PR page.
 
