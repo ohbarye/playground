@@ -1,0 +1,15 @@
+current directory: /Users/ohbarye/dev/playground/react-rails/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+/Users/ohbarye/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160903-82264-cd9n2z.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ohbarye/dev/playground/react-rails/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/ohbarye/dev/playground/react-rails/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/ohbarye/dev/playground/react-rails/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20160903-82264-am234d
