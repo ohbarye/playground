@@ -1,0 +1,3 @@
+%{
+  "holiday_jp": {:hex, :holiday_jp, "0.2.4", "26eed3d8733603ab8ef8db46f18eb05768fd8df53b6329b7522c0ade5084e1fa", [:mix], [], "hexpm"},
+}
