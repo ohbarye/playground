@@ -26,3 +26,5 @@ doc/
 npm-debug.log
 node_modeles/
 build/
+**/_build/
+**/_opam/
